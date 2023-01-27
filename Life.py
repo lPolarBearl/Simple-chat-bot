@@ -25,7 +25,8 @@ def check_all_messages(message):
     response("Fine", ["how", "are", "you", "doing", "whatsup" ], required_words=["how"])
     response("See you later!", ["bye", "goodbye"], single_response=True)
     response("Ok, see you later!", ["i", "gotta", "to", "go", "gonna", "got",],required_words=["go"])
-    response("My name is Jack", ["what", "is", "your", "name"],required_words=["name"]) 
+    response("My name is Jack", ["what", "is", "your", "name"],required_words=["name"])
+    response("No, LOL", ["are", "ypu", "alive"],required_words=["alive"])
     best_match = max(highest_prob_list, key=highest_prob_list.get)
     print(highest_prob_list)
     return best_match
